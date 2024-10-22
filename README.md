@@ -8,15 +8,8 @@ RFM analysis is rooted in the premise that customers who have purchased recently
 This project on Analyzing Customer Behavior and Market Trends in a UK-Based Online Retail Company aims to provide insights that can inform the company’s strategic decisions, particularly focusing on transactional data spanning December 2010 to December 2011. The company primarily specializes in unique gifts for all occasions and caters to both retail customers and wholesalers.
 
  # Objectives and Aims
-The primary objectives of this research are as follows:
-
-1. To identify and categorize customer segments using RFM analysis, providing a clear understanding of customer behaviors and characteristics.
-2. To analyze the spending behavior of different customer groups to identify trends and anomalies.
-3. To develop targeted marketing strategies based on the insights gained from the segmentation analysis, thereby improving customer engagement and retention.
-4. To understand the implications of customer segmentation on overall marketing strategies and business growth, highlighting how tailored approaches can lead to enhanced customer satisfaction.
+The objective of this project is to analyze customer behavior and market trends for a UK-based online retail company specializing in unique all-occasion gifts. Using a transactional dataset spanning from 01/12/2010 to 09/12/2011, the project aims to derive actionable insights to inform strategic decision-making and business growth.
    
-By achieving these objectives, this research seeks to bridge the gap between data analysis and practical marketing applications, contributing to the strategic framework of businesses aiming to optimize their customer relationships.
-
  # Research Questions
 This research addresses the following critical questions:
 
@@ -47,9 +40,23 @@ Country: Country where the customer resides.
 
 Negative Values:
 
-Quantity: Negative values indicate product returns or cancellations. There were 10,624 rows with negative quantities.
+Quantity: Negative values indicate product returns or cancellations. The mean quantity of items purchased per transaction is around 9.55, with a standard deviation of approximately 218, This indicates a wide variation in the quantity of items purchased per transaction.
+
+The minimum quantity is -80995, indicating product returns or cancellations, and the maximum quantity is 80995. 25% of the transactions involve quantities of 1 or less, while 75% involve quantities of 10 or less.There were 10,624 rows with negative quantities.
+
+![image](https://github.com/user-attachments/assets/25962cf4-7e70-4ee9-9dce-e8f8a96e5ae3)
+The histogram shows that most transactions involve smaller quantities, with a right-skewed distribution. The peak around 0 indicates a significant number of transactions with negative quantities, likely representing returns or cancellations.
+
 Unit Price: Only 2 rows had negative unit prices.
-A special check revealed no rows where both quantity and unit price were negative.
+The mean unit price of items is about £4.61, with a standard deviation of approximately £96.76,This suggests a wide range of prices for the items sold by the company.
+
+The minimum unit price is £0, and the maximum unit price is £38970. 25% of the items have a unit price of £1.25 or less, while 75% have a unit price of £4.13 or less.
+![image](https://github.com/user-attachments/assets/39fd5f85-95c6-48ad-9346-da5aae853ad5)
+The histogram displays the distribution of unit prices, showing a right-skewed distribution with a peak around lower values. There might be a few outliers with very high unit prices, as indicated by the long tail towards the higher prices.
+
+ # we checked if they is a customer ID with either negative quantity ordered or nagative unit price : [nan]
+ 
+based on the provided information,the rows with negative values in both quantity and unit price do not have a corresponding Customer ID. This suggests that these rows may be incomplete or corrupted data entries, as they lack a crucial identifier (Customer ID) for associating the transaction with a specific customer. Therefore, when cleaning the data, i choose to remove these rows separately considering the absence of a Customer ID.
 
 # Missing Data:
 
@@ -59,6 +66,8 @@ CustomerID was missing for 132,220 rows, which could affect customer segmentatio
 
 Removing Negative Quantities and Unit Prices:
 Transactions with negative quantities and unit prices were filtered out.
+![image](https://github.com/user-attachments/assets/8be25938-47e3-4cdd-beb1-baa489e7a94c)
+
 The cleaned dataset had a total of 409,689 transactions.
 
 # Standardizing Product Descriptions:
@@ -68,8 +77,14 @@ This inconsistency was resolved by standardizing the descriptions.
 
 # Descriptive Statistics (Post-Cleaning):
 
-Quantity: Mean = 12.99, Max = 80,995, Min = 1. A wide range in quantities, with the distribution skewed toward smaller transactions.
-Unit Price: Mean = £3.12, Max = £8,142.75, Min = £0.001. Prices show a right-skewed distribution, with most products priced low, and a few expensive outliers.
+Quantity: Mean = 12.99, 
+Max = 80,995, 
+Min = 1. A wide range in quantities, with the distribution skewed toward smaller transactions.
+Unit Price:
+Mean = £3.12, 
+Max = £8,142.75,
+Min = £0.001. 
+Prices show a right-skewed distribution, with most products priced low, and a few expensive outliers.
 
 # RFM Scoring: 
 Each customer was assigned an RFM score based on the following criteria:
@@ -95,10 +110,12 @@ UK Dominance:
 The UK accounts for 82% of total sales, making it the most significant market for the company.
 
 The top 10 countries by sales include France, Germany, and Ireland, but their sales contribution is significantly smaller than the UK.
+
 Top Customers:
 ![image](https://github.com/user-attachments/assets/a7cd8af4-72bc-45e0-8e89-8c56986fca4a)
 
 The top 10 customers contributed 17.26% of the total sales, with the highest sales coming from Customer 14646.
+
 Top Products:
 
 ![image](https://github.com/user-attachments/assets/71aea83f-779f-4b71-b730-83d3d00f7a77)
