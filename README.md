@@ -51,17 +51,6 @@ CustomerID was missing for 132,220 rows, which could affect customer segmentatio
 
 # Descriptive Statistics (Post-Cleaning):
 
-Statistics    	Quantity	UnitPrice	CustomerID
-count	397884.000000	397884.000000	397884.000000
-mean	12.988238	3.116488	15294.423453
-std	179.331775	22.097877	1713.141560
-min	1.000000	0.001000	12346.000000
-25%	2.000000	1.250000	13969.000000
-50%	6.000000	1.950000	15159.000000
-75%	12.000000	3.750000	16795.000000
-max	80995.000000	8142.750000	18287.000000
-
-
 The cleaned dataset had a total of 409,689 transactions.
 
 # Quantity:
@@ -184,28 +173,42 @@ The cluster analysis identified four distinct customer segments:
 # Cluster 0:
 
 Recency: 17.12 days
+
 Frequency: 22.02 purchases
+
 Monetary: $12,546.98
 
 Interpretation: Customers in this cluster are moderately frequent purchasers with decent spending. They exhibit potential to evolve into loyal customers with targeted engagement.
 
+
 # Cluster 1:
 
 Recency: 52.26 days
+
 Frequency: 3.70 purchases
+
 Monetary: $1,356.20
+
 Interpretation: These customers are at risk of churning. Their infrequent purchases and low spending highlight the need for urgent re-engagement strategies.
+
 
 # Cluster 2:
 Recency: 267.57 days
+
 Frequency: 1.55 purchases
+
 Monetary: $498.99
+
 Interpretation: This cluster represents likely lost customers, as they exhibit very low purchasing activity. Win-back campaigns may be necessary, although success is uncertain.
+
 
 # Cluster 3:
 Recency: 13.62 days
+
 Frequency: 82.69 purchases
+
 Monetary: $127,338.31
+
 Interpretation: Customers in this cluster are highly engaged and spend significantly. They should be prioritized for retention strategies, such as exclusive offers and personalized services.
 
 
