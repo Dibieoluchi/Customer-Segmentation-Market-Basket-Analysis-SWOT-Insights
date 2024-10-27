@@ -1,4 +1,5 @@
 # Customer-Segmentation-Market-Basket-Analysis-SWOT-Insights
+![image](https://github.com/user-attachments/assets/3859583e-43b8-4c95-aaf7-a3429a994bf7)
 
 # Introduction
 Today's marketplace is characterized by intense competition and shifting consumer preferences, businesses are increasingly recognizing the importance of understanding their customers. The rise of data analytics has transformed the way organizations approach customer relationships, enabling them to make data-fueled decisions that enhance engagement and improve retention. This research focuses on customer segmentation through Recency, Frequency, and Monetary (RFM) analysis, a powerful tool that allows companies to categorize customers based on their purchasing behavior.
