@@ -8,7 +8,8 @@ RFM analysis is rooted in the premise that customers who have purchased recently
 
 # Methodology
 
-![image](https://github.com/user-attachments/assets/bb5ec9b7-d450-4470-8b3c-bd04df7fc18e)
+![image](https://github.com/user-attachments/assets/c2d88ef0-ee78-47aa-ad41-39162bf46a18)
+
 
 # Data Collection and Preparation
 
