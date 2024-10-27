@@ -44,8 +44,6 @@ Quantity: Negative values indicate product returns or cancellations. The mean qu
 
 The minimum quantity is -80995, indicating product returns or cancellations, and the maximum quantity is 80995. 25% of the transactions involve quantities of 1 or less, while 75% involve quantities of 10 or less.There were 10,624 rows with negative quantities.
 
-![image](https://github.com/user-attachments/assets/c87a8759-9a76-4dfe-ba96-49bc840bc045)
-
 
 
 The histogram shows that most transactions involve smaller quantities, with a right-skewed distribution. The peak around 0 indicates a significant number of transactions with negative quantities, likely representing returns or cancellations.
@@ -55,7 +53,7 @@ The mean unit price of items is about £4.61, with a standard deviation of appro
 
 The minimum unit price is £0, and the maximum unit price is £38970. 25% of the items have a unit price of £1.25 or less, while 75% have a unit price of £4.13 or less.
 
-![image](https://github.com/user-attachments/assets/596dd320-2020-4008-8aa2-eef66197d861)
+![image](https://github.com/user-attachments/assets/4a5877a8-d355-41e7-95bc-469ec7da8a3f)
 
 
 The histogram displays the distribution of unit prices, showing a right-skewed distribution with a peak around lower values. There might be a few outliers with very high unit prices, as indicated by the long tail towards the higher prices.
