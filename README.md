@@ -51,7 +51,7 @@ CustomerID was missing for 132,220 rows, which could affect customer segmentatio
 
 # Descriptive Statistics (Post-Cleaning):
 
-Quantity	UnitPrice	CustomerID
+Statistics    	Quantity	UnitPrice	CustomerID
 count	397884.000000	397884.000000	397884.000000
 mean	12.988238	3.116488	15294.423453
 std	179.331775	22.097877	1713.141560
@@ -60,6 +60,7 @@ min	1.000000	0.001000	12346.000000
 50%	6.000000	1.950000	15159.000000
 75%	12.000000	3.750000	16795.000000
 max	80995.000000	8142.750000	18287.000000
+
 
 The cleaned dataset had a total of 409,689 transactions.
 
