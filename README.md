@@ -44,8 +44,7 @@ Quantity: Negative values indicate product returns or cancellations. The mean qu
 
 The minimum quantity is -80995, indicating product returns or cancellations, and the maximum quantity is 80995. 25% of the transactions involve quantities of 1 or less, while 75% involve quantities of 10 or less.There were 10,624 rows with negative quantities.
 
-![image](https://github.com/user-attachments/assets/ca924f24-0e90-4309-886a-b32b6ee53acc)
-
+![image](https://github.com/user-attachments/assets/85ff2cbd-ee78-4921-a406-4d2dd6676da8)
 
 
 The histogram shows that most transactions involve smaller quantities, with a right-skewed distribution. The peak around 0 indicates a significant number of transactions with negative quantities, likely representing returns or cancellations.
@@ -54,7 +53,10 @@ Unit Price: Only 2 rows had negative unit prices.
 The mean unit price of items is about £4.61, with a standard deviation of approximately £96.76,This suggests a wide range of prices for the items sold by the company.
 
 The minimum unit price is £0, and the maximum unit price is £38970. 25% of the items have a unit price of £1.25 or less, while 75% have a unit price of £4.13 or less.
-![image](https://github.com/user-attachments/assets/39fd5f85-95c6-48ad-9346-da5aae853ad5)
+
+![image](https://github.com/user-attachments/assets/596dd320-2020-4008-8aa2-eef66197d861)
+
+
 The histogram displays the distribution of unit prices, showing a right-skewed distribution with a peak around lower values. There might be a few outliers with very high unit prices, as indicated by the long tail towards the higher prices.
 
  # we checked if they is a customer ID with either negative quantity ordered or nagative unit price : [nan]
@@ -69,7 +71,9 @@ CustomerID was missing for 132,220 rows, which could affect customer segmentatio
 
 Removing Negative Quantities and Unit Prices:
 Transactions with negative quantities and unit prices were filtered out.
-![image](https://github.com/user-attachments/assets/8be25938-47e3-4cdd-beb1-baa489e7a94c)
+
+![image](https://github.com/user-attachments/assets/bb5a7efb-91a6-4709-b5a0-5d4ee01002bb)
+
 
 The cleaned dataset had a total of 409,689 transactions.
 
@@ -106,28 +110,33 @@ Customers were then segmented into distinct groups based on their RFM scores. Th
 The methodology employed is crucial for several reasons. First, RFM analysis provides a structured framework that allows businesses to categorize customers quantitatively. By utilizing precise metrics, organizations can identify not only who their customers are but also how to engage them effectively. Furthermore, the visualization of data through charts and heatmaps aids in the communication of complex findings to stakeholders, making it easier to develop targeted marketing strategies.
 
 # Exploratory Analysis 
-![image](https://github.com/user-attachments/assets/55992e5e-b173-4b7d-b95b-13ef25b08ae9)
 
-UK Dominance:
+![image](https://github.com/user-attachments/assets/c71cd7f4-04cc-4da5-a4a5-050b2a09bd5f)
+
+
+# UK Dominance:
 
 The UK accounts for 82% of total sales, making it the most significant market for the company.
 
 The top 10 countries by sales include France, Germany, and Ireland, but their sales contribution is significantly smaller than the UK.
 
-Top Customers:
-![image](https://github.com/user-attachments/assets/a7cd8af4-72bc-45e0-8e89-8c56986fca4a)
+# Top Customers:
+![image](https://github.com/user-attachments/assets/2169fdd2-e4df-455e-b40e-1f18bfcc668c)
+
 
 The top 10 customers contributed 17.26% of the total sales, with the highest sales coming from Customer 14646.
 
-Top Products:
+# Top Products:
 
-![image](https://github.com/user-attachments/assets/71aea83f-779f-4b71-b730-83d3d00f7a77)
+![image](https://github.com/user-attachments/assets/deaa5b8f-f3bd-43c0-95fe-48dda26cf87f)
 
-An analysis of top-selling products revealed that they represented a significant portion of total sales and invoices, suggesting that certain products drive a large part of the company’s revenue.
+An analysis of top-selling products revealed that These top 10 products represent approximately 9.95% of the total sales amount and about 2.6% of the total number of events (invoices).
+which rrepresent  a significant portion of total sales and invoices, suggesting that certain products drive a large part of the company’s revenue.
 
 # Customer Segmentation Insights
 
-![image](https://github.com/user-attachments/assets/79d80fc0-a753-4226-818a-695a6a5a4513)
+![image](https://github.com/user-attachments/assets/e8b60a95-f4fb-4932-95ac-a0aa37cd7272)
+
 
 At Risk Customers (55.7%): The analysis revealed that a significant portion of customers falls into the at-risk category, indicating a pressing need for businesses to implement re-engagement strategies. These customers may exhibit decreased purchasing frequency, reduced spending, or lack of recent purchases.
 
@@ -138,7 +147,8 @@ Lost Customers (5.3%): A smaller percentage of customers have likely churned, re
 VIP Customers (0.9%): The analysis identified a very limited number of VIP customers, suggesting that there is significant potential for growth within this category. By focusing on the traits of these customers, businesses can develop strategies to cultivate more VIPs.
 
 # Heatmap Analysis
-![image](https://github.com/user-attachments/assets/cac3e865-0f00-4114-aae2-9e6e8f0d83ba)
+![image](https://github.com/user-attachments/assets/a144942a-e36d-4df3-848a-a714074674dd)
+
 
 The heatmap visualization highlighted the relationship between R, F, and M scores:
 
@@ -151,8 +161,7 @@ Middle Areas (Moderate R and F Scores): Customers in these areas displayed moder
 # Cluster Analysis Insights
 The cluster analysis identified four distinct customer segments:
 
-
-![image](https://github.com/user-attachments/assets/eef8187e-3e18-475d-97ab-194ea3709868)
+![image](https://github.com/user-attachments/assets/b420dbb5-1d81-4e43-9172-76d4e2ca7638)
 
 Recency  Frequency       Monetary
 0   17.124402  22.019139   12546.983206
@@ -160,15 +169,13 @@ Recency  Frequency       Monetary
 2  267.569495   1.551444     498.987835
 3   52.297207   3.702793    1356.652863
 
-![image](https://github.com/user-attachments/assets/10a003e1-0c94-4c42-8146-e9b59b6cf5af)
+![image](https://github.com/user-attachments/assets/d6c6f3c4-edbf-4aa0-b151-3fd650b4cd5e)
 
-![image](https://github.com/user-attachments/assets/fb95f1cf-3963-4b67-a38d-f0ace3589273)
+![image](https://github.com/user-attachments/assets/41081e46-c692-4817-8e6c-f1b22edd20d8)
 
-![image](https://github.com/user-attachments/assets/f4671981-76ca-4dd4-986b-56d9e41da3a9)
+![image](https://github.com/user-attachments/assets/d676c873-d12a-4bf9-bca2-f892175ada22)
 
-
-
-Cluster 0:
+# Cluster 0:
 
 Recency: 17.12 days
 Frequency: 22.02 purchases
@@ -176,21 +183,20 @@ Monetary: $12,546.98
 
 Interpretation: Customers in this cluster are moderately frequent purchasers with decent spending. They exhibit potential to evolve into loyal customers with targeted engagement.
 
-
-Cluster 1:
+# Cluster 1:
 
 Recency: 52.26 days
 Frequency: 3.70 purchases
 Monetary: $1,356.20
 Interpretation: These customers are at risk of churning. Their infrequent purchases and low spending highlight the need for urgent re-engagement strategies.
-Cluster 2:
 
+# Cluster 2:
 Recency: 267.57 days
 Frequency: 1.55 purchases
 Monetary: $498.99
 Interpretation: This cluster represents likely lost customers, as they exhibit very low purchasing activity. Win-back campaigns may be necessary, although success is uncertain.
-Cluster 3:
 
+# Cluster 3:
 Recency: 13.62 days
 Frequency: 82.69 purchases
 Monetary: $127,338.31
