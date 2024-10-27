@@ -3,27 +3,26 @@
 # Introduction
 Today's marketplace is characterized by intense competition and shifting consumer preferences, businesses are increasingly recognizing the importance of understanding their customers. The rise of data analytics has transformed the way organizations approach customer relationships, enabling them to make data-fueled decisions that enhance engagement and improve retention. This research focuses on customer segmentation through Recency, Frequency, and Monetary (RFM) analysis, a powerful tool that allows companies to categorize customers based on their purchasing behavior.
 
-RFM analysis is rooted in the premise that customers who have purchased recently (Recency), buy frequently (Frequency), and spend more (Monetary) are likely to be more valuable to a business. By understanding these dimensions, companies can identify distinct customer segments, tailor their marketing strategies, and ultimately drive profitability. This study aims to explore the segmentation of a customer base of a UK-based online retail company, interpret their customer's behavioral patterns, and provide recommendations that can improve customer loyalty and reduce churn rates. It focuses on transactional data spanning December 2010 to December 2011. The company primarily specializes in unique gifts for all occasions and caters to both retail customers and wholesalers.
+RFM analysis is rooted in the premise that customers who have purchased recently (Recency), buy frequently (Frequency), and spend more (Monetary) are likely to be more valuable to a business. By understanding these dimensions, companies can identify distinct customer segments, tailor their marketing strategies, and ultimately drive profitability. This study aims to explore the segmentation of a customer base of a UK-based online retail company,  and provide recommendations that can improve customer loyalty and reduce churn rates. It focuses on transactional data spanning December 2010 to December 2011. The company primarily specializes in unique gifts for all occasions and caters to both retail customers and wholesalers.
 
-   
 
 # Methodology
 
-https://lucid.app/lucidchart/0d6cab3e-60af-4c01-a4b9-43428d3fc0dc/edit?viewport_loc=-1668%2C-1100%2C4416%2C1788%2C0_0&invitationId=inv_3c531fd0-5cbf-42d4-a206-ab65f82a9101
+![image](https://github.com/user-attachments/assets/bb5ec9b7-d450-4470-8b3c-bd04df7fc18e)
 
 # Data Collection and Preparation
 
 The analysis utilized a dataset comprising sales transactions  spanning from 01/12/2010 to 09/12/2011. The following steps were undertaken to ensure the integrity and relevance of the data:
 
 # Dataset Overview:
-InvoiceNo: Unique 6-digit number for each transaction (cancellations are marked with 'C').
-StockCode: Unique 5-digit product identifier.
-Description: Product name.
-Quantity: Number of units per product sold in a transaction.
-InvoiceDate: Timestamp of the transaction.
-UnitPrice: Price per unit (in GBP).
-CustomerID: Unique 5-digit number for each customer (may contain missing values).
-Country: Country where the customer resides.
+1. InvoiceNo: Unique 6-digit number for each transaction (cancellations are marked with 'C').
+2. StockCode: Unique 5-digit product identifier.
+3. Description: Product name.
+4. Quantity: Number of units per product sold in a transaction.
+5. InvoiceDate: Timestamp of the transaction.
+6. UnitPrice: Price per unit (in GBP).
+7. CustomerID: Unique 5-digit number for each customer (may contain missing values).
+8. Country: Country where the customer resides.
 
 # Initial Observations:
 
@@ -95,6 +94,8 @@ This inconsistency was resolved by standardizing the descriptions,This data clea
 # Exploratory Analysis 
 
 ![image](https://github.com/user-attachments/assets/f583c71c-bdc7-4aac-92c8-57891231ed7e)
+
+# uk internal market
 
 ![image](https://github.com/user-attachments/assets/29956e1d-2902-42f9-ac2d-ebca98ecce57)
 
@@ -172,12 +173,6 @@ The cluster analysis identified four distinct customer segments:
 ![image](https://github.com/user-attachments/assets/9ce3951a-47f4-40ec-b66e-f1d4d107c954)
 
 
-Recency  Frequency       Monetary
-0   17.124402  22.019139   12546.983206
-1   13.615385  82.538462  127338.313846
-2  267.569495   1.551444     498.987835
-3   52.297207   3.702793    1356.652863
-
 ![image](https://github.com/user-attachments/assets/3c1ac6a6-3cbd-4b21-9e65-995396121e3f)
 
 ![image](https://github.com/user-attachments/assets/24e32731-468b-4312-b9b6-4bbf8a0d3559)
@@ -215,40 +210,28 @@ Interpretation: Customers in this cluster are highly engaged and spend significa
 
 # Key Findings
 
-The analysis led to several critical findings:
+The analysis yielded several critical insights into the company's customer base and sales performance.
 
-High Proportion of At-Risk Customers: The fact that over half of the customer base is at risk highlights a pressing challenge that requires immediate attention. This segment is crucial for revenue stability, and strategies must be implemented to engage and retain them.
+Sales Distribution and Market Presence: The UK market is paramount to the company’s success, accounting for a substantial 82% of total sales. This highlights the importance of the UK in generating revenue. Additionally, while there is a growing audience in key international markets such as France, Germany, and Ireland, their sales contributions remain relatively modest compared to the UK.
 
-Significant Loyal Segment: A robust segment of loyal customers indicates that there is a solid foundation for retention strategies. Nurturing this group can enhance customer lifetime value and brand loyalty.
+Customer Contribution to Revenue: The top customers constitute 17.26% of overall sales, revealing their significant impact on revenue. However, these customers and the top-selling products represent a small fraction of total transactions, suggesting that a limited number of customers drive a disproportionate amount of sales.
 
-Limited VIP Customers: The scarcity of VIP customers represents an opportunity for growth. By identifying the traits of existing VIP customers, businesses can tailor their offerings to cultivate more customers within this segment.
+Challenge of At-Risk Customers: A concerning finding is that over half of the customer base is categorized as at-risk. This highlights a pressing challenge for the business, as these customers have shown a notable decline in engagement and purchasing frequency. Their diminishing activity raises concerns about their potential exit from active shopping behavior, indicating a need for focused strategies to address this issue.
 
-Behavioral Patterns: The analysis revealed distinct purchasing behaviors among customer segments, underscoring the importance of tailored marketing strategies. Understanding these patterns is essential for optimizing customer engagement efforts.
+Loyal Customer Segment: The presence of a significant segment of loyal customers presents a solid foundation for retention efforts. These customers exhibit consistent purchasing patterns and engagement, contributing a reliable stream of revenue. Their repeated purchases indicate a strong connection to the brand, suggesting opportunities to strengthen this relationship further.
 
-# Recommendations
+Limited VIP Customer Base: The analysis reveals a scarcity of VIP customers, who represent the highest value segment. Characterized by high purchase frequency and substantial transaction value, this group plays a crucial role in the store's revenue. Their limited number presents an opportunity for growth, indicating that there is potential to enhance engagement with this valuable segment.
 
-Based on the analysis and findings, the following recommendations are proposed:
+Lost Customers: The data indicates that 5.3% of customers are classified as lost, meaning they once demonstrated high activity but have not interacted with the store for an extended period. This presents a challenge, as it signifies a notable portion of the customer base has churned, pointing to potential gaps in retention strategies.
 
-Re-engagement Strategies for At-Risk Customers:
 
-Develop personalized marketing campaigns that address the specific needs and preferences of at-risk customers. Utilize targeted emails, exclusive discounts, and incentives to encourage repeat purchases.
-Conduct surveys to gather feedback from this segment, allowing businesses to understand the reasons behind decreased engagement and address them effectively.
-Nurturing Loyal Customers:
+# Recommendations Based on Analysis and Findings
 
-Continue to provide rewards for loyalty through loyalty programs, exclusive offers, and personalized experiences that recognize their value to the business.
-Regularly solicit feedback from loyal customers to ensure their needs are met and enhance their overall satisfaction.
-Win-Back Campaigns for Lost Customers:
+To address the needs of different customer segments effectively, the following strategies are recommended:
 
-Analyze the reasons behind customer churn by conducting exit surveys or follow-up communications. This feedback will help inform win-back strategies.
-Implement win-back campaigns that offer strong incentives to entice lost customers back to the brand, such as discounts or special offers on popular products.
+1. Expand International Market Initiatives: While the UK market is critical, the growing international audience should not be overlooked. Developing  marketing strategies for France, Germany, and Ireland could improve  brand visibility and drive sales in these markets. This may include localized promotions, partnerships with regional influencers, or culturally relevant product offerings.
 
-Cultivating VIP Customers:
-
-Identify the characteristics and behaviors of VIP customers to replicate their engagement patterns among other customer segments. Focus on providing personalized experiences that cater to their preferences.
-Consider introducing a tiered loyalty program that rewards higher spending customers with exclusive access to events, products, or services.
-
-Data-Driven Marketing Strategies:
-
-Utilize insights from RFM analysis to inform broader marketing strategies, ensuring that campaigns are aligned with customer behaviors and preferences.
-Regularly update RFM scores to capture shifts in customer behavior over time and adjust marketing strategies accordingly.
-
+2. Re-engagement strategies are essential for retaining at-risk customers. Personalized marketing campaigns should be developed, focusing on their specific needs and preferences. Targeted emails, exclusive discounts, and other incentives can encourage these customers to make repeat purchases. Additionally, surveys should be conducted to gather feedback from this group, helping the business understand and address the factors contributing to decreased engagement.
+3. For loyal customers, continued recognition is key. Rewarding loyalty through exclusive offers, well-structured loyalty programs, and personalized experiences will reinforce their connection to the brand. Regularly collecting feedback from these customers will help ensure their satisfaction and that their needs are consistently met.
+4. For customers who have disengaged, win-back campaigns should be designed based on an understanding of the reasons behind customer churn. Exit surveys or follow-up communications can provide valuable insights, which can then inform effective win-back strategies. Campaigns could include strong incentives, such as discounts or special offers on popular products, to attract lost customers back to the brand.
+5. Lastly, VIP customers should receive distinct attention. By understanding the behaviors and preferences of VIP customers, the brand can replicate successful engagement strategies among other segments. VIPs should experience highly personalized services that cater to their preferences, and a tiered loyalty program can offer higher-spending customers unique benefits like early access to events, products, or exclusive services, further enhancing their relationship with the brand.
