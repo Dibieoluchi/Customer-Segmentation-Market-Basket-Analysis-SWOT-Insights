@@ -44,7 +44,9 @@ Quantity: Negative values indicate product returns or cancellations. The mean qu
 
 The minimum quantity is -80995, indicating product returns or cancellations, and the maximum quantity is 80995. 25% of the transactions involve quantities of 1 or less, while 75% involve quantities of 10 or less.There were 10,624 rows with negative quantities.
 
-![image](https://github.com/user-attachments/assets/25962cf4-7e70-4ee9-9dce-e8f8a96e5ae3)
+![image](https://github.com/user-attachments/assets/2509efa4-b693-4a84-b424-987a4ec36642)
+
+
 The histogram shows that most transactions involve smaller quantities, with a right-skewed distribution. The peak around 0 indicates a significant number of transactions with negative quantities, likely representing returns or cancellations.
 
 Unit Price: Only 2 rows had negative unit prices.
