@@ -52,8 +52,7 @@ Unit Price: Only 2 rows had negative unit prices.
 The mean unit price of items is about £4.61, with a standard deviation of approximately £96.76,This suggests a wide range of prices for the items sold by the company.
 
 The minimum unit price is £0, and the maximum unit price is £38970. 25% of the items have a unit price of £1.25 or less, while 75% have a unit price of £4.13 or less.
-
-![image](https://github.com/user-attachments/assets/4a5877a8-d355-41e7-95bc-469ec7da8a3f)
+![image](https://github.com/user-attachments/assets/31a350f3-6c0e-4001-afa0-feebc2bef5e5)
 
 
 The histogram displays the distribution of unit prices, showing a right-skewed distribution with a peak around lower values. There might be a few outliers with very high unit prices, as indicated by the long tail towards the higher prices.
