@@ -242,9 +242,7 @@ To address the needs of different customer segments effectively, the following s
 4. For customers who have disengaged, win-back campaigns should be designed based on an understanding of the reasons behind customer churn. Exit surveys or follow-up communications can provide valuable insights, which can then inform effective win-back strategies. Campaigns could include strong incentives, such as discounts or special offers on popular products, to attract lost customers back to the brand.
 5. Lastly, VIP customers should receive distinct attention. By understanding the behaviors and preferences of VIP customers, the brand can replicate successful engagement strategies among other segments. VIPs should experience highly personalized services that cater to their preferences, and a tiered loyalty program can offer higher-spending customers unique benefits like early access to events, products, or exclusive services, further enhancing their relationship with the brand.
 
-## Contributors
+## Contributor
 
 A special thanks to everyone who contributed to this project.
-
-- [Oluchi Dibie]:(https://github.com/Dibieoluchi)
 - [Chinonso Dibie] : (https://github.com/Chinonsodibie)
